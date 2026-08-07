@@ -1,0 +1,47 @@
+# 📝 82. Remove Duplicates from Sorted List II (LeetCode)
+
+🔗 [Problem Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
+
+### 💡 Tags
+Linked List, Two Pointers
+
+### 🚀 Performance
+- **Runtime:** 0 ms
+- **Memory:** 44.9 MB
+
+---
+
+### 📜 Problem Description
+
+Given the  `head`  of a sorted linked list,  *delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list* . Return  *the linked list  **sorted**  as well* .
+
+**Example 1:**
+
+ ![image](https://assets.leetcode.com/uploads/2021/01/04/linkedlist1.jpg) 
+
+```
+Input: head = [1,2,3,3,4,4,5]
+Output: [1,2,5]
+
+```
+
+**Example 2:**
+
+ ![image](https://assets.leetcode.com/uploads/2021/01/04/linkedlist2.jpg) 
+
+```
+Input: head = [1,1,1,2,3]
+Output: [2,3]
+
+```
+
+**Constraints:**
+
+	
+- The number of nodes in the list is in the range  `[0, 300]` .
+	
+- `-100 <= Node.val <= 100`
+	
+- The list is guaranteed to be  **sorted**  in ascending order.
