@@ -8,8 +8,8 @@
 String, Dynamic Programming, Longest Common Subsequence
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 34 ms
+- **Memory:** 53.9 MB
 
 ---
 
