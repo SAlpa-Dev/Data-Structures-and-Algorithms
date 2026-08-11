@@ -1,27 +1,15 @@
 class Solution {
-    public int minimum(String s1,String s2,int i,int j){
+    public int minimum(StringBuilder s1,StringBuilder s2,int i,int j){
         if(i<0) return j+1;
         if(j<0) return i+1;
-        int replace=Integer.MAX_VALUE;int delete=Integer.MAX_VALUE;int insert=Integer.MAX_VALUE;
         if(s1.charAt(i)==s2.charAt(j)) return minimum(s1,s2,i-1,j-1);
-        else{
-            StringBuilder sb1=new StringBuilder(s1);
-            sb1.setCharAt(i,s2.charAt(j));
-            replace=1+minimum(sb1.toString(),s2,i-1,j-1);
-
-            StringBuilder sb2=new StringBuilder(s1);
-            sb2.deleteCharAt(i);
-            delete=1+minimum(sb2.toString(),s2,i-1,j);
-
-            StringBuilder sb3=new StringBuilder(s1);
-            sb3.insert(i,s2.charAt(j));
-            insert=1+minimum(sb3.toString(),s2,i,j-1);
-            
-        }
+        int replace=1+minimum(s1,s2,i-1,j-1);
+        int delete=1+minimum(s1,s2,i-1,j);
+        int insert=1+minimum(s1,s2,i,j-1);
         return Math.min(replace,Math.min(delete,insert));
     }
     public int minDistance(String s1, String s2) {
         int i=s1.length()-1,j=s2.length()-1;
-        return minimum(s1,s2,i,j);
+        return minimum(new StringBuilder(s1),new StringBuilder(s2),i,j);
     }
 }
