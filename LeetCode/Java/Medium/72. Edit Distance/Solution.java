@@ -20,6 +20,7 @@ class Solution {
         return Math.min(replace,Math.min(delete,insert));
     }
     public int minDistance(String s1, String s2) {
+        if(s1.length()==0) return s2.length();
         int i=s1.length()-1,j=s2.length()-1;
         return minimum(s1,s2,i,j);
     }
