@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 17 / 100 (17.0%)
+- **Completed:** 20 / 100 (20.0%)
 
 ---
 
@@ -90,15 +90,15 @@ Track your progress on the Grind 100 coding interview preparation list.
 
 ### 📂 Dynamic Programming
 - [ ] Climbing Stairs
-- [ ] Coin Change
+- [x] [Coin Change](./Java/Medium/322. Coin Change/)
 - [ ] Word Break
 - [ ] Longest Increasing Subsequence
 - [ ] House Robber
 - [ ] Partition Equal Subset Sum
-- [ ] Edit Distance
+- [x] [Edit Distance](./Java/Medium/72. Edit Distance/)
 - [x] [Unique Paths](./Java/Medium/62. Unique Paths/)
 - [x] [Minimum Path Sum](./Java/Medium/64. Minimum Path Sum/)
-- [ ] Target Sum
+- [x] [Target Sum](./Java/Medium/494. Target Sum/)
 - [ ] Unique Binary Search Trees
 - [ ] Best Time to Buy and Sell Stock
 - [ ] Best Time to Buy and Sell Stock with Cooldown
