@@ -8,8 +8,8 @@
 Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect
 
 ### 🚀 Performance
-- **Runtime:** 26 ms
-- **Memory:** 69.8 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
