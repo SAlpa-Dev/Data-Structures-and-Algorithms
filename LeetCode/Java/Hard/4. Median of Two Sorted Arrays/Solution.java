@@ -14,7 +14,7 @@ class Solution {
         while(j<n)  merge[k++]=nums2[j++];
         
         int len=merge.length;
-        double median=0.0;
+        double median=0;
 
         if(len%2==0){
             int mid=len/2;
