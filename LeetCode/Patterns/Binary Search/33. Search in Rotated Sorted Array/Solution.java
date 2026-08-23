@@ -9,11 +9,11 @@ class Solution {
                 break;
             }
             else if(arr[i]>arr[mid]){                             //right-half sorted
-                if(arr[i]<=target && target<arr[j]) i=mid+1;
+                if(arr[i]<=target && target<=arr[j]) i=mid+1;
                 else j=mid-1;
             }
             else{                                                //left-half sorted
-                if(arr[i]<=target && target<arr[mid]) j=mid-1;
+                if(arr[i]<=target && target<=arr[mid]) j=mid-1;
                 else i=mid+1; 
             }
         }
