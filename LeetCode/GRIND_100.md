@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 24 / 100 (24.0%)
+- **Completed:** 25 / 100 (25.0%)
 
 ---
 
@@ -80,7 +80,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [x] [Generate Parentheses](./Java/Medium/22. Generate Parentheses/)
 - [x] [Search a 2D Matrix](./Java/Medium/74. Search a 2D Matrix/)
 - [x] [Search a 2D Matrix II](./Java/Medium/240. Search a 2D Matrix II/)
-- [ ] Search in Rotated Sorted Array
+- [x] [Search in Rotated Sorted Array](./Java/Medium/33. Search in Rotated Sorted Array/)
 - [ ] Find First and Last Position of Element in Sorted Array
 
 ### 📂 Graph & Trie
