@@ -9,7 +9,7 @@ class Solution {
                 break;
             }
             else if(arr[i]>arr[mid]){                             //right-half sorted
-                if(arr[mid]<=target && target<=arr[j]) i=mid+1;
+                if(arr[mid]<target && target<=arr[j]) i=mid+1;
                 else j=mid-1;
             }
             else{                                                //left-half sorted
