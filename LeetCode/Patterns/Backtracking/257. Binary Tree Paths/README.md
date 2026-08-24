@@ -8,8 +8,8 @@
 String, Backtracking, Tree, Depth-First Search, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 103 ms
+- **Memory:** 49.4 MB
 
 ---
 
