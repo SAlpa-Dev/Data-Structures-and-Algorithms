@@ -18,9 +18,7 @@ class Solution {
         if(root==null) return;
         if(s.length()==0) s+=root.val;
         else s+="->"+root.val;
-        if(root.left==null && root.right==null){
-            ans.add(s);
-        }
+        if(root.left==null && root.right==null) ans.add(s);
         rootToLeaf(root.left,ans,s);
         rootToLeaf(root.right,ans,s);
     }
