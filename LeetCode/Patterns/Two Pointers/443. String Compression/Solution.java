@@ -1,7 +1,7 @@
 class Solution {
     public int compress(char[] chars) {
         if(chars.length==1) return 1;
-        int i=0,idx=0;
+        int idx=0;
         for(int i=0;i<chars.length;i++){
             int grp_len=1;
             char ch=chars[i];
