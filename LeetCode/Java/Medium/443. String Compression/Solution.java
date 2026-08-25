@@ -1,6 +1,6 @@
 class Solution {
     public int compress(char[] chars) {
-
+        if(chars.length==1) return 1;
         int i=0,idx=0;
         while(i<chars.length){
             int grp_len=1;
