@@ -8,8 +8,8 @@
 Array, Hash Table, Prefix Sum
 
 ### 🚀 Performance
-- **Runtime:** 1538 ms
-- **Memory:** 47.8 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
