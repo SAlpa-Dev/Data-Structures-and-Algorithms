@@ -6,13 +6,14 @@ class Solution {
         return isPowerOfTwo(n/2);
         */
 
-        if(n<=0) return false;
+        /*if(n<=0) return false;
         int count=0;
         for(int i=0;i<31;i++){
             if((n>>i)%2!=0) count++;  
         }
-
         if(count>1) return false;
-        return true;
+        return true;*/
+
+        return (n&(n-1)); 
     }
 }
