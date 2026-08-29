@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 27 / 100 (27.0%)
+- **Completed:** 28 / 100 (28.0%)
 
 ---
 
@@ -13,7 +13,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [x] [Two Sum](./Java/Easy/1. Two Sum/)
 - [ ] 3Sum
 - [ ] Container With Most Water
-- [ ] Move Zeroes
+- [x] [Move Zeroes](./Java/Easy/283. Move Zeroes/)
 - [ ] Sort Colors
 - [ ] Product of Array Except Self
 - [ ] Next Permutation
