@@ -8,8 +8,8 @@
 Math, Dynamic Programming, Combinatorics
 
 ### 🚀 Performance
-- **Runtime:** 1 ms
-- **Memory:** 41.8 MB
+- **Runtime:** 0 ms
+- **Memory:** 42.2 MB
 
 ---
 
