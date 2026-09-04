@@ -1,6 +1,6 @@
 # 📝 493. Reverse Pairs (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/reverse-pairs/)
+🔗 [Problem Link](https://leetcode.com/problems/reverse-pairs)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Java-blue)
 

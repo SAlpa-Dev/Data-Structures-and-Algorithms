@@ -23,7 +23,7 @@ class Solution {
             if(a[i]>b[j]){
                 int x=i;
                 while(x<a.length){
-                    if(a[x]>2*b[j]) count+=a.length-x;
+                    if(a[x]>2*b[j]) count++;
                     x++;
                 }
                 arr[k++]=b[j++];
