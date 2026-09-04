@@ -2,20 +2,19 @@ class Solution {
     public int missingNumber(int[] arr) {
         int n=arr.length;
         int i=0;
-        while(i<arr.length){
-            if(arr[i]==i|| arr[i]==n) i++;
+        while(i<n){
+            int correct_idx=arr[i];
+            if(arr[i]==n || arr[i]==arr[correct_idx]) i++;
             else{
                 int temp=arr[i];
-                arr[i]=arr[temp];
-                arr[temp]=temp;
+                arr[i]=arr[correct_idx];
+                arr[correct_idx]=temp;
             }
         }
 
-        for(i=0;i<arr.length;i++){
-            if(arr[i]!=i) return i;
+        for(int j=0;j<arr.length;j++){
+            if(arr[j]!=j) return j;
         }
-
         return n;
-
     }
 }
