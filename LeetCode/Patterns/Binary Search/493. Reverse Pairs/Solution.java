@@ -20,7 +20,7 @@ class Solution {
         int count=0;
         int i=0,j=0,k=0; 
         while(i<a.length && j<b.length){
-            if(a[i]>b[j]){
+            if(a[i]>=b[j]){
                 int x=i;
                 while(x<a.length){
                     if(a[x]>2*b[j]) count++;
