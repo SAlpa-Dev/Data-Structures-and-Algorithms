@@ -8,8 +8,8 @@
 Array, Binary Search, Divide and Conquer, Binary Indexed Tree, Segment Tree, Merge Sort, Ordered Set, Treap
 
 ### 🚀 Performance
-- **Runtime:** 40 ms
-- **Memory:** 60.8 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
