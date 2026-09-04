@@ -25,7 +25,7 @@ class Solution {
         int j = 0;
 
         while(i<a.length && j<b.length) {
-            if(a[i]>2*b[j]){
+            if((long)a[i]>2L*b[j]){
                 count += a.length - i;
                 j++;
             }
