@@ -15,16 +15,18 @@ class Solution {
         ListNode t=dummy;
         ListNode t1=list1;
         ListNode t2=list2;
+        
         while(t1!=null && t2!=null){
             if(t1.val>=t2.val){
                 t.next=t2;
+                t=t.next;
                 t2=t2.next;
             }
             else{
                 t.next=t1;
+                t=t.next;
                 t1=t1.next;
             }
-            t=t.next;
         }
         while(t1!=null){
             t.next=t1;
@@ -36,6 +38,7 @@ class Solution {
             t=t.next;
             t2=t2.next;
         }
+
         return dummy.next;
     }
 }
