@@ -17,7 +17,8 @@ class Solution {
             if(i.val==j.val) j=j.next;
             else{
                 i.next=j;
-                i=j;
+                i=i.next;
+                j=j.next;
             }
         }
         i.next=null;
