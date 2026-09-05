@@ -32,7 +32,7 @@ class Solution {
         ListNode right=slow.next;
         slow.next=null;
         ListNode t1=right;
-        while(t1.next!=null) t1=t1.next;
+        while(t1!=null && t1.next!=null) t1=t1.next;
         t1.next=head;
 
         return right;
