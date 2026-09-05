@@ -40,6 +40,6 @@ public class Solution {
             t1=t1.next;
             t2=t2.next;
         }
-        return t2;
+        return t1;
     }
 }
