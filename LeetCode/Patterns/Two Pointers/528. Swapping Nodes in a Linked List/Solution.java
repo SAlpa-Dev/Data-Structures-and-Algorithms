@@ -19,9 +19,9 @@ class Solution {
             fast=fast.next;
         }
         ListNode second=slow;
-        int temp=second.val;
-        second.val=first.val;
-        first.val=temp;
+        int temp=first.val;
+        first.val=second.val;
+        second.val=temp;
 
         return head;
     }
