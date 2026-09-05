@@ -16,11 +16,13 @@ class Solution {
             if(fast.next==null) return head.next;
             fast=fast.next;
         }
+
         while(fast.next!=null){
             slow=slow.next;
             fast=fast.next;
         }
         slow.next=slow.next.next;
         return head;
+
     }
 }
