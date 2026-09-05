@@ -25,16 +25,16 @@ public class Solution {
 
         t1=headA;
         t2=headB;
-
+        
         if(sizeA>=sizeB){
             int diff=sizeA-sizeB;
             for(int i=0;i<diff;i++) t1=t1.next;
         }
-
-        else {
+        else{
             int diff=sizeB-sizeA;
             for(int i=0;i<diff;i++) t2=t2.next;
         }
+
         while(t1!=t2){
             if(t1==null || t2==null) return null;
             t1=t1.next;
