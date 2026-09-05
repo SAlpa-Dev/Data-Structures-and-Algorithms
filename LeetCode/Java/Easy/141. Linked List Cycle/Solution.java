@@ -19,5 +19,6 @@ public class Solution {
             if(fast==slow) return true;
         }
         return false;
+
     }
 }
