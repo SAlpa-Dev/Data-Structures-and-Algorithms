@@ -44,7 +44,6 @@ class Solution {
         ListNode temp=head;
         ListNode left_half=sortList(temp);
         ListNode right_half=sortList(right);
-        ListNode ans=mergeTwoLists(left_half,right_half);
-        return ans;
+        return mergeTwoLists(left_half,right_half);
     }
 }
