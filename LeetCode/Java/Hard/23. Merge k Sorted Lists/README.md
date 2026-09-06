@@ -8,7 +8,7 @@
 Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort, Tournament Sort
 
 ### 🚀 Performance
-- **Runtime:** 163 ms
+- **Runtime:** 6 ms
 - **Memory:** 46.9 MB
 
 ---
