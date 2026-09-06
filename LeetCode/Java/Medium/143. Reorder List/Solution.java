@@ -9,9 +9,8 @@
  * }
  */
 class Solution {
-    public ListNode reverse(ListNode head){
-        if(head==null || head.next==null) return head;
-        ListNode c=head;
+    public ListNode reverse(ListNode half){
+        ListNode c=half;
         ListNode p=null;
         ListNode f=null;
         while(c!=null){
@@ -23,35 +22,32 @@ class Solution {
         return p;
     }
     public void reorderList(ListNode head) {
-        if(head.next==null) return;
         ListNode slow=head;
         ListNode fast=head.next;
         while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
         }
-        ListNode right=slow.next;
+        ListNode half=slow.next;
         slow.next=null;
-        ListNode right_half=reverse(right);
-        ListNode i=head;
-        ListNode j=right_half;
-        ListNode t=i;
-        while(i!=null && j!=null){
-            t.next=j;
-            t=t.next;
-            i=i.next;
-
-            t.next=i;
-            t=t.next;
-            j=j.next;
+        half=reverse(half);
+        ListNode t1=head;
+        ListNode t2=half;
+        ListNode dummy=new ListNode(-1);
+        ListNode t=dummy;
+        while(t1!=null & t2!=null){
+            t.next=t1;
+            t=t1;
+            t1=t1.next;
+            t.next=t2;
+            t=t2;
+            t2=t2.next;
         }
-
-        while(i!=null){
-            t.next=i;
-            t=t.next;
-            i=i.next;
+        while(t1!=null){
+            t.next=t1;
+            t=t1;
+            t1=t1.next;
         }
-        
         t.next=null;
     }
 }
