@@ -8,8 +8,8 @@
 Linked List, Two Pointers, Stack, Recursion
 
 ### 🚀 Performance
-- **Runtime:** 2 ms
-- **Memory:** 49.4 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
