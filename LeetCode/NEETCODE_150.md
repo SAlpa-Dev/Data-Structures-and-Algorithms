@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 9 / 150 (6.0%)
+- **Completed:** 10 / 150 (6.7%)
 
 ---
 
@@ -54,7 +54,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Median of Two Sorted Arrays
 
 ### 📂 Linked List
-- [ ] Reverse Linked List
+- [x] [Reverse Linked List](./Java/Easy/206. Reverse Linked List/)
 - [x] [Merge Two Sorted Lists](./Java/Easy/21. Merge Two Sorted Lists/)
 - [ ] Reorder List
 - [x] [Remove Nth Node From End of List](./Java/Medium/19. Remove Nth Node From End of List/)
