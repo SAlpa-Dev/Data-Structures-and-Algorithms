@@ -11,12 +11,12 @@
 class Solution {
     public int length(ListNode head){
         ListNode temp=head;
-        int len=0;
+        int size=0;
         while(temp!=null){
-            len++;
             temp=temp.next;
+            size++;
         }
-        return len;
+        return size;
     }
     public ListNode oddEvenList(ListNode head) {
         if(head==null || head.next==null) return head;
@@ -27,19 +27,18 @@ class Solution {
         ListNode t=head;
         int n=length(head);
         for(int i=1;i<=n;i++){
-            if(i%2==0){
-                t2.next=t;
-                t2=t2.next;
-            }
-            else{
+            if(i%2!=0){
                 t1.next=t;
                 t1=t1.next;
             }
+            else{
+                t2.next=t;
+                t2=t2.next;
+            }
             t=t.next;
         }
-        t2.next=null;
         t1.next=dummy2.next;
+        t2.next=null;
         return dummy1.next;
-
     }
 }
