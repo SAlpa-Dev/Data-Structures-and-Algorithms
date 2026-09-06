@@ -22,20 +22,19 @@ class Solution {
         return p;
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode head1=reverse(l1);
-        ListNode head2=reverse(l2);
+        ListNode first=reverse(l1);
+        ListNode second=reverse(l2);
+        ListNode t1=first;
+        ListNode t2=second;
         ListNode dummy=new ListNode(-1);
         ListNode t=dummy;
         int carry=0;
-        ListNode t1=head1;
-        ListNode t2=head2;
         while(t1!=null || t2!=null || carry!=0){
-            int a= (t1!=null)? t1.val:0;
-            int b= (t2!=null)? t2.val:0;
+            int a=(t1!=null) ? t1.val:0;
+            int b=(t2!=null) ? t2.val:0;
             int sum=a+b+carry;
             if(sum>9){
-                int val=sum%10;
-                ListNode newNode=new ListNode(val);
+                ListNode newNode=new ListNode(sum%10);
                 t.next=newNode;
                 carry=1;
             }
