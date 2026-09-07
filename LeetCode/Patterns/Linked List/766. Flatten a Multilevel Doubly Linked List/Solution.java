@@ -11,22 +11,23 @@ class Node {
 class Solution {
     public Node flatten(Node head) {
         if(head==null) return null;
-        Node temp=head;
-        while(temp!=null){
-            if(temp.child!=null){
-                Node right=temp.next;
-                Node c=flatten(temp.child);
-                temp.child=null;
-                temp.next=c;
-                c.prev=temp;
-                Node d=c;
-                while(d.next!=null) d=d.next;
-                d.next=right;
-                if(right!=null) right.prev=d;
-                temp=right;
+        Node curr=head;
+        while(curr!=null){
+            if(curr.child==null) curr=curr.next;
+            else{
+                Node right=curr.next;
+                Node c=flatten(curr.child);
+                curr.child=null;
+                curr.next=c;
+                c.prev=curr;
+                Node temp=c;
+                while(temp.next!=null) temp=temp.next;
+                temp.next=right;
+                if(right!=null) right.prev=temp;
+                curr=right;
             }
-            else temp=temp.next;
         }
-        return head;
+
+        return head; 
     }
 }
