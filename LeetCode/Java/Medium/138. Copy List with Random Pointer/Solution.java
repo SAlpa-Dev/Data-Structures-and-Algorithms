@@ -34,7 +34,7 @@ class Solution {
             if(t1.random==null) t2.random=null;
             else t2.random=t1.random.next;
             t1=t1.next.next;
-            if(t2.next!=null) t2=t2.next.next;
+            //if(t2.next!=null) t2=t2.next.next;
         }
     }
     public Node spilt(Node head){
