@@ -1,24 +1,10 @@
-/*
-// Definition for a Node.
-class Node {
-    int val;
-    Node next;
-    Node random;
-
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-        this.random = null;
-    }
-}
-*/
 class Solution {
-    public Node deepcopy(Node head){
+    public Node deepCopy(Node head){
         Node dummy=new Node(-1);
         Node t=dummy;
         Node temp=head;
         while(temp!=null){
-            Node newNode= new Node(temp.val);
+            Node newNode =new Node(temp.val);
             t.next=newNode;
             t=t.next;
             temp=temp.next;
@@ -26,7 +12,7 @@ class Solution {
         return dummy.next;
     }
     public Node join(Node head,Node clone){
-        Node dummy=new Node (-1);
+        Node dummy=new Node(-1);
         Node t=dummy;
         Node t1=head;
         Node t2=clone;
@@ -34,13 +20,14 @@ class Solution {
             t.next=t1;
             t=t.next;
             t1=t1.next;
+
             t.next=t2;
             t=t.next;
             t2=t2.next;
         }
         return dummy.next;
     }
-    public void assigning(Node head){
+    public void assign(Node head){
         Node t1=head;
         while(t1!=null){
             Node t2=t1.next;
@@ -50,7 +37,7 @@ class Solution {
             if(t2.next!=null) t2=t2.next.next;
         }
     }
-    public Node split(Node head){
+    public Node spilt(Node head){
         Node dummy1=new Node(-1);
         Node dummy2=new Node(-1);
         Node t1=dummy1;
@@ -69,20 +56,22 @@ class Solution {
         t2.next=null;
         return dummy2.next;
     }
+
     public Node copyRandomList(Node head){
-        if(head==null) return head;
-        //deepcopy
-        Node clone=deepcopy(head);
+        if(head==null) return null;
+        //step1: DeepCopy
+        Node clone=deepCopy(head);
 
-        //connect Alternatively
-        Node interleaved=join(head,clone);
+        //Step2: Atlernatively connect both LL
+        Node connect=join(head,clone);
 
-        //Assigning random pointer
-        assigning(interleaved);
-        //split the list
-        Node ans=split(interleaved);
+        //step3: Assign random pointer
+        assign(connect);
+
+        //Step4: Spilt the list
+        Node ans=spilt(connect);
 
         return ans;
-        
+
     }
 }
