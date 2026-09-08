@@ -1,17 +1,25 @@
 class Solution {
     public int[] canSeePersonsCount(int[] arr) {
-        int[]ans=new int[arr.length];
+        int[] ans=new int[arr.length];
         Stack<Integer>st=new Stack<>();
-        for(int i=arr.length-1;i>=0;i--){
+        int i=arr.length-1;
+        while(i>=0){
             int count=0;
-            while(st.size()>0 && arr[i]>=st.peek()){
-                st.pop();
-                count++;
-            }
             if(st.size()==0) ans[i]=count;
-            else ans[i]=count+1;
+            else if(arr[i]<st.peek()) ans[i]=count+1;
+            else{
+                while(st.size()>0 && arr[i]>st.peek()){
+                    count++;
+                    st.pop();
+                }
+                if(st.size()!=0) ans[i]= count+1;
+                else ans[i]=count; 
+            }
             st.push(arr[i]);
+            i--;
         }
+
         return ans;
+
     }
 } 
