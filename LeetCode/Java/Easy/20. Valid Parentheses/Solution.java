@@ -1,8 +1,8 @@
 class Solution {
-    public boolean reciprocal(char top, char ch){
+    public boolean reciprocal(char top,char ch){
         if(top=='(' && ch==')') return true;
-        else if(top=='[' && ch==']') return true;
-        else if(top=='{' && ch=='}') return true;
+        else if (top=='[' && ch==']') return true;
+        else if (top=='{' && ch=='}') return true;
         return false;
     }
     public boolean isValid(String s) {
@@ -14,7 +14,7 @@ class Solution {
             else{
                 if(st.size()==0) return false;
                 if(reciprocal(st.peek(),ch)) st.pop();
-                else return false; 
+                else return false;
             }
             i++;
         }
