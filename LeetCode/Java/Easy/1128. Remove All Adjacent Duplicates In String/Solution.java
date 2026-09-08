@@ -5,18 +5,16 @@ class Solution {
         int i=0;
         while(i<s.length()){
             char ch=s.charAt(i);
-            if(st.size()==0) st.push(ch);
-            else{
-                if(ch==st.peek()) st.pop();
-                else st.push(ch);
-            }
+            if(st.size()==0 || st.peek()!=ch) st.push(ch);
+            else st.pop();
             i++;
         }
-        StringBuilder sb=new StringBuilder();
-        while(!st.isEmpty()) sb.append(st.pop());
-        sb.reverse();
-        String ans=sb.toString();
-
-        return ans; 
+        StringBuilder ans=new StringBuilder();
+        while(!st.isEmpty()){
+            ans.append(st.pop());
+        }
+        
+        String s1=ans.reverse().toString();
+        return s1;
     }
 }
