@@ -12,21 +12,20 @@ class Solution {
     public ListNode removeNodes(ListNode head) {
         Stack<Integer>st=new Stack<>();
         ListNode temp=head;
-        while(temp!=null){
-            int n=temp.val;
-            if(st.size()==0 || st.peek()>n) st.push(n);
+        while(temp!=null) {
+            if(st.size()==0 || st.peek()>temp.val) st.push(temp.val);
             else{
-                while(st.size()>0 && n>st.peek()) st.pop();
-                st.push(n);
+                while(st.size()>0 && st.peek()<temp.val) st.pop();
+                st.push(temp.val);
             }
             temp=temp.next;
         }
+
         while(!st.isEmpty()){
-            ListNode newNode =new ListNode(st.pop());
+            ListNode newNode=new ListNode(st.pop());
             newNode.next=temp;
             temp=newNode;
         }
         return temp;
-
     }
 }
