@@ -3,13 +3,10 @@ class Solution {
         if(s.length()==1) return s;
         Stack<Character>st=new Stack<>();
         int i=0;
-        while(i<s.length()){
+        while(i<s.length()){    
             char ch=s.charAt(i);
-            if(st.size()==0) st.push(ch);
-            else{
-                if(ch==st.peek()) st.pop();
-                else st.push(ch);
-            }
+            if(st.size()==0 || ch!=st.peek()) st.push(ch);
+            else st.pop();
             i++;
         }
         StringBuilder sb=new StringBuilder();
