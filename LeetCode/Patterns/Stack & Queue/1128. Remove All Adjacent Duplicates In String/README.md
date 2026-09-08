@@ -8,8 +8,8 @@
 String, Stack
 
 ### 🚀 Performance
-- **Runtime:** 32 ms
-- **Memory:** 47.1 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
