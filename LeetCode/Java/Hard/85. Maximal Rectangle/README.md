@@ -1,6 +1,6 @@
 # 📝 85. Maximal Rectangle (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/maximal-rectangle)
+🔗 [Problem Link](https://leetcode.com/problems/maximal-rectangle/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Array, Dynamic Programming, Stack, Matrix, Monotonic Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 32 ms
+- **Memory:** 48.9 MB
 
 ---
 
