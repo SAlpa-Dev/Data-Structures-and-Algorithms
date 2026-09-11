@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    public static void postorder(TreeNode root, ArrayList<Integer>ans){
+    public void postorder(TreeNode root,ArrayList<Integer>ans){
         if(root==null) return;
         postorder(root.left,ans);
         postorder(root.right,ans);
