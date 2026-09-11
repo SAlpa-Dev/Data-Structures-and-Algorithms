@@ -16,7 +16,7 @@ class Node
 */
 class Solution {
     public int getSize(Node root) {
-        if(root ==null) return 0;
+        if(root==null) return 0;
         int left=getSize(root.left);
         int right=getSize(root.right);
         return 1+left+right;
