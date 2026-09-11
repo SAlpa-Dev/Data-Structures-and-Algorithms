@@ -20,6 +20,6 @@ class Solution {
             if(root.val==targetSum) return true;
             else return false;
         }
-        return (hasPathSum(root.left,targetSum-root.val) ||  hasPathSum(root.right,targetSum-root.val)) ;     
+        return hasPathSum(root.left,targetSum-root.val) ||  hasPathSum(root.right,targetSum-root.val);     
     }
 }
