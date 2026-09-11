@@ -1,0 +1,10 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/perfect-binary-tree/1">Perfect Binary Tree</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given a Binary Tree, check whether the given Binary Tree is a prefect Binary Tree or not. A Binary tree is Perfect Binary Tree in which all internal nodes have two children and all leaves are at same level.</span></p>
+<p dir="ltr"><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:</strong> root[] = [7, 4, 9]<br></span><span style="font-size: 18px;"><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/928192/Web/Other/blobid0_1778757069.png" width="197" height="151"><br></span>
+<strong><span style="font-size: 18px;">Output: </span></strong><span style="font-size: 18px;">true</span>
+<span style="font-size: 18px;"><strong>Explanation: </strong></span>
+<span style="font-size: 18px;">As the root node 7 has two children and two leaf nodes </span><span style="font-size: 18px;">4 and 9 are at same level.</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong></span><span style="font-size: 18px;">root[] = [7, 3, 8, 2, 5, N, 10, 1, N, N, N, N, N]<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/928192/Web/Other/blobid3_1778757183.png" width="346" height="216"><br></span>
+<span style="font-size: 18px;"><strong>Output: </strong>false</span>
+</pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ n ≤ 10^5<br>1 ≤ data of node ≤ 10^5</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>FactSet</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Tree</code>&nbsp;
