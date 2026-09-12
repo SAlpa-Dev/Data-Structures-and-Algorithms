@@ -17,7 +17,7 @@ class Solution {
     public void rightView(TreeNode root, int level, List<Integer>ans){
         if(root==null) return;
         if(ans.size()==level) ans.add(root.val);
-        ans.set(level,root.val);
+        else ans.set(level,root.val);
         rightView(root.left,level+1,ans);
         rightView(root.right,level+1,ans);
     }
