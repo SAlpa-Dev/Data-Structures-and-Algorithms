@@ -21,6 +21,8 @@ class Solution {
         int right=level(root.right);
         if(Math.abs(left-right)>1) flag=false;
         return 1+Math.max(left,right);
+
+
     }
     public boolean isBalanced(TreeNode root) {
         if(root==null) return true;
