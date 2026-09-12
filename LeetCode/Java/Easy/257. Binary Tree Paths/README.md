@@ -8,14 +8,16 @@
 String, Backtracking, Tree, Depth-First Search, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** 3 ms
-- **Memory:** 49.4 MB
+- **Runtime:** 4 ms
+- **Memory:** 50 MB
 
 ---
 
 ### 📜 Problem Description
 
-Given the  `root`  of a binary tree, return  *all root-to-leaf paths in  **any order*** .
+You are given the  `root`  of a binary tree.
+
+Return all  **root-to-leaf**  paths ** in  **any order** .
 
 A  **leaf**  is a node with no children.
 
