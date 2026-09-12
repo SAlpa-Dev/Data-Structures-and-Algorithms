@@ -14,18 +14,20 @@
  * }
  */
 class Solution {
-    public void rootToLeaf(TreeNode root,List<String>ans,String s){
+    public void paths(TreeNode root,List<String>ans,String s){
         if(root==null) return;
-        if(s.length()==0) s+=root.val;
-        else s+="->"+root.val;
-        if(root.left==null && root.right==null) ans.add(s);
-        rootToLeaf(root.left,ans,s);
-        rootToLeaf(root.right,ans,s);
+        s=s+root.val;
+        if(root.left==null && root.right==null){
+            ans.add(s);
+        }
+
+        paths(root.left,ans,s+"->");
+        paths(root.right,ans,s+"->");
     }
     public List<String> binaryTreePaths(TreeNode root) {
         List<String>ans=new ArrayList<>();
         String s="";
-        rootToLeaf(root,ans,s);
-        return ans;
+        paths(root,ans,s);
+        return ans;   
     }
 }
